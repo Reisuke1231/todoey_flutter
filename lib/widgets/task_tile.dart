@@ -45,7 +45,7 @@ class TaskCheckbox extends StatelessWidget {
     return Checkbox(
       activeColor: Colors.lightBlueAccent,
       value: checkboxState,
-      onChanged: toggleCheckboxCallback,
+      onChanged: (bool? value) => toggleCheckboxCallback(value),
     );
   }
 }
